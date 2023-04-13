@@ -1,0 +1,56 @@
+/* Write your CSS here */
+.container {
+  margin: 1rem;
+  font-family: 'roboto';
+  padding: 1rem;
+}
+
+.main-comment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.addbutn {
+  background-color: #0284c7;
+  border-style: none;
+  color: #ffffff;
+  padding: 8px;
+  width: 50%;
+  border-radius: 5px;
+}
+.webimg {
+  width: 100%;
+}
+
+.usercomments,
+p {
+  display: inline;
+  margin-right: 10px;
+}
+
+.count {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  height: 10px;
+  width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-comment-section {
+    flex-direction: column;
+  }
+  .img-section {
+    order: 0;
+    margin-top: 10px;
+  }
+  .comment-section {
+    order: 1;
+  }
+}
